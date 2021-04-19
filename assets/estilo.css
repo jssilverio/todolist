@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(241, 240, 240);
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 50vw;
+    margin-top: 20px;
+    box-shadow: 1px 2px 14px -2px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121828;
+    box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 80px;
+    color: #fff;
+    margin-bottom: 10px;
+    font: bold 30px 'Open Sans', sans-serif;
+}
+
+.lista {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.75);
+    font: bold 15px 'Open Sans', sans-serif;
+}
+
+.item>div {
+    width: 80%;
+}
+
+.item:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.item [type='text'] {
+    border: none;
+    width: 80%;
+}
+
+.item [type='button'],
+.item [type='checkbox'] {
+    width: 20px;
+    height: 20px;
+}
+
+.item [type='checkbox']:checked+div {
+    text-decoration: line-through;
+}
+
+.novo_item {
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+    height: 60px;
+    padding: 10px 0;
+    margin: 5px;
+    box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.75);
+    
+}
+
+.novo_item input {
+    background-color: rgb(196, 201, 253);
+    font: bold 15px 'Open Sans', sans-serif;
+    text-align: center;
+    border: none;
+    width: 90%;
+    margin: 5px;
+}
+
+@media (max-width:630px){
+    .novo_item input {
+        font: bold 13px 'Open Sans', sans-serif;
+    }
+}
+
+@media (max-width:536px){
+    .novo_item input {
+        font: bold 10px 'Open Sans', sans-serif;
+    }
+}
+
+@media (max-width:400px){
+    .novo_item input {
+        font: bold 8px 'Open Sans', sans-serif;
+    }
+}
